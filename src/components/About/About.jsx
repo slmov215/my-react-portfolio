@@ -5,8 +5,7 @@ const About = () => {
     <section id="about">
       <h2>About Me</h2>
       <p>
-        Hello! I am a passionate web developer with a strong interest in React and front-end technologies.
-        {/* Add more about yourself */}
+        Hello, I'm Stephen, a restaurant manager turned full stack developer. With a background in customer-centric leadership and a passion for coding, I've transitioned into creating intuitive web applications using HTML, CSS, JavaScript, and React. I bring a unique blend of creativity, efficiency, and user-focused development to every project.
       </p>
     </section>
   );

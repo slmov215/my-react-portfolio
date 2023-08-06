@@ -1,79 +1,90 @@
-/* src/styles.css */
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+/* styles.css */
+
+/* Global Styles */
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
+  color: #333;
 }
 
-/* Add more custom styles here */
+a {
+  color: #333;
+  text-decoration: none;
+}
 
-/* header {
-    background-image: url('/path/to/your/background-image.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  } */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header Styles */
+
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 2rem;
+  background-color: #222;
+  padding: 1rem;
   text-align: center;
+  position: relative;
 }
 
 header h1 {
   font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  margin: 0;
+  color: #fff;
 }
 
 nav {
   margin-top: 1rem;
-  display: flex;
-  justify-content: center;
 }
 
 nav a {
-  color: #fff;
-  text-decoration: none;
   margin: 0 1rem;
+  color: #333;
   font-size: 1.2rem;
-  transition: all 0.3s ease;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a::before {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #007bff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
-  transform: translateY(-3px);
+  color: #5bc0de;
 }
+
+nav a:hover::before {
+  transform: scaleX(1);
+}
+
+/* Main Content Styles */
 
 main {
   padding: 2rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
 }
 
 section {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #007bff;
 }
 
-section p {
-  line-height: 1.6;
-}
+/* Projects Styles */
 
 ul {
   list-style: none;
@@ -81,20 +92,85 @@ ul {
 }
 
 li {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 li a {
-  color: #007bff;
-  text-decoration: none;
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: bold;
 }
 
-li a:hover {
-  text-decoration: underline;
+li p {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #666;
 }
 
-@media (max-width: 768px) {
-  main {
-    grid-template-columns: 1fr;
-  }
+/* Social Icons */
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #007bff;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+  color: #fff;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #5bc0de;
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: #222;
+  padding: 2rem 0;
+  text-align: center;
+  position: relative;
+}
+
+footer p {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #fff;
+}
+
+/* Contact Section Animation */
+
+#contact .inquiry-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+#contact.animate .inquiry-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Add a cool shadow effect to the footer */
+footer::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  filter: blur(10px);
 }

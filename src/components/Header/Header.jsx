@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header className="bg-blue-500">
       <nav className="container mx-auto px-4 py-6 flex items-center justify-between">
-        <h1 className="text-3xl font-bold text-white">Your Name</h1>
+        <h1 className="text-3xl font-bold text-white">Stephen Mov</h1>
         <div>
           <a
             href="#about"

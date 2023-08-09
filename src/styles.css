@@ -2,7 +2,7 @@
 
 /* Global Styles */
 
-body {
+/* body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
   margin: 0;
@@ -13,7 +13,7 @@ body {
 a {
   color: #333;
   text-decoration: none;
-}
+} */
 
 a:hover {
   text-decoration: underline;
@@ -40,7 +40,7 @@ nav {
 
 nav a {
   margin: 0 1rem;
-  color: #333;
+  color: #fff;
   font-size: 1.2rem;
   position: relative;
   text-decoration: none;
@@ -72,16 +72,26 @@ nav a:hover::before {
 
 main {
   padding: 2rem;
+  background-color: #FAF9F6;
 }
 
 section {
   margin-bottom: 3rem;
+  /* Add a unique background gradient animation */
+  background-image: linear-gradient(45deg, #3a3b3d, #aab4b7, #1c1c1d);
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  color: #fff; /* Text color for better contrast */
 }
 
 section h2 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
-  color: #007bff;
+  color: #111111;
+  text-align: center;
 }
 
 /* Projects Styles */
@@ -101,12 +111,14 @@ li a {
   margin-bottom: 0.5rem;
   color: #333;
   font-weight: bold;
+  text-align: center;
 }
 
 li p {
   font-size: 1.2rem;
   margin: 0;
-  color: #666;
+  color: #FAF9F6;
+  text-align: center;
 }
 
 /* Social Icons */
@@ -173,4 +185,44 @@ footer::before {
   height: 10px;
   background: rgba(0, 0, 0, 0.2);
   filter: blur(10px);
+}
+
+/* Projects Styles */
+
+.carousel-inner {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #fff;
+}
+
+.carousel-control-prev-icon::before {
+  content: '‹';
+}
+
+.carousel-control-next-icon::before {
+  content: '›';
 }

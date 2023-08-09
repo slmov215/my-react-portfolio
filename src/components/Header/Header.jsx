@@ -1,31 +1,29 @@
-import React from "react";
+// components/Header.jsx
+import React from 'react';
 
 const Header = () => {
   return (
-    <header className="bg-blue-500">
-      <nav className="container mx-auto px-4 py-6 flex items-center justify-between">
-        <h1 className="text-3xl font-bold text-white">Stephen Mov</h1>
-        <div>
-          <a
-            href="#about"
-            className="text-white hover:bg-blue-600 transition duration-300 px-4 py-2 rounded-lg"
-          >
-            About
-          </a>
-          <a
-            href="#projects"
-            className="text-white hover:bg-blue-600 transition duration-300 px-4 py-2 rounded-lg"
-          >
-            Projects
-          </a>
-          <a
-            href="#contact"
-            className="text-white hover:bg-blue-600 transition duration-300 px-4 py-2 rounded-lg"
-          >
-            Contact
-          </a>
+    <header className="bg-dark text-white py-4">
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-md-3">
+            <img
+              src="img/my-pic-1.jpeg" // Replace with the actual path to your image
+              alt="Your Name"
+              className="img-fluid rounded-circle"
+              style={{ width: '100px', height: '100px' }}
+            />
+          </div>
+          <div className="col-md-9 text-md-left text-center">
+            <h1 className="display-4">Your Name</h1>
+            <nav className="nav justify-content-center justify-content-md-start">
+              <a className="nav-link" href="#about">About</a>
+              <a className="nav-link" href="#projects">Projects</a>
+              <a className="nav-link" href="#contact">Contact</a>
+            </nav>
+          </div>
         </div>
-      </nav>
+      </div>
     </header>
   );
 };

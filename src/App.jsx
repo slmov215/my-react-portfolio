@@ -7,12 +7,13 @@ import Contact from './components/Contact/Contact';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import "./styles.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
   return (
     <div>
       <Header />
-      <main>
+      <main className="container">
         <About />
         <Projects />
         <Contact />

@@ -1,0 +1,114 @@
+/* Projects Section Styling */
+#projects {
+  background-color: #f5f5f5;
+  padding: 80px 0;
+  /* animation: flyOff 3s ease-in-out infinite; */
+}
+
+#projects h2 {
+  color: #333;
+}
+
+/* Project Card Styling */
+.card {
+  border: none;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s, animation 1s;
+}
+
+.card:hover {
+  transform: scale(1.02) rotate(2deg);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  animation: wiggle 1s ease-in-out infinite;
+}
+
+.card-img-top {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-top: 10px;
+}
+
+.card-text {
+  font-size: 0.875rem;
+}
+
+/* Puzzle-Like Distortion Effect */
+.card:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  background: linear-gradient(45deg, #007bff, #17a2b8);
+  opacity: 0.2;
+  z-index: -1;
+  transform: skew(2deg, 2deg);
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.card:hover:before {
+  transform: skew(0, 0);
+  opacity: 0.4;
+}
+
+.btn-custom {
+  background: linear-gradient(45deg, #007bff, #17a2b8);
+  color: #fff;
+  border: none;
+  /* transition: background 0.3s, transform 0.2s, box-shadow 0.2s; */
+  transition: transform 0.3s, box-shadow 0.3s, animation 1s;
+}
+
+.btn-custom:hover {
+  background: linear-gradient(45deg, #17a2b8, #007bff);
+  color: #fff;
+  /* transform: translateY(-3px); */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px) scale(1.05);
+  animation: wiggle 1s ease-in-out infinite;
+}
+
+/* Fly-off Animation */
+@keyframes flyOff {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.card {
+  /* ... (other card styles) */
+  animation: flyOff 5s ease-in-out 1;
+}
+/* Fancier GitHub Button Styling */
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

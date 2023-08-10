@@ -1,0 +1,22 @@
+.nav {
+  background-color: #fff; /* Set your desired background color */
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #ddd;
+  font-family: "Playfair Display", serif; /* Use an elegant font */
+}
+
+.nav-link {
+  color: #555; /* Set your desired font color */
+  font-size: 18px;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #111212; /* Change color on hover and when active */
+  font-weight: bolder;
+  text-decoration: none;
+}

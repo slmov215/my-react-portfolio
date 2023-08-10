@@ -1,0 +1,16 @@
+.header {
+  background-color: #f8f9fa; /* Set your desired background color */
+  padding: 100px 0;
+}
+
+/* .header h1 {
+  color: #f8fafc;
+  font-size: 3rem;
+  margin-bottom: 10px;
+} */
+
+.header h3 {
+  color: #555; /* Set your desired font color */
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}

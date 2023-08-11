@@ -1,0 +1,35 @@
+/* Contact.css */
+
+.contact-link {
+  display: inline-block;
+  margin: 20px 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.contact-link:hover {
+  transform: translateY(-3px);
+  color: #007bff;
+}
+
+.contact-icon {
+  font-size: 2rem;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.btn-back {
+  margin-top: 30px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-back:hover {
+  background-color: #0056b3;
+}

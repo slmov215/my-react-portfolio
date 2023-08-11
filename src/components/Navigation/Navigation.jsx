@@ -1,24 +1,27 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navigation.css";
 
-
-const pages = ["About", "Project", "Contact"];
+const pages = [
+  { name: "About", path: "/about" },
+  { name: "Projects", path: "/projects" },
+  { name: "Contact", path: "/contact" },
+  { name: "Resume", path: "/resume" },
+];
 
 function Navigation({ currentPage, setCurrentPage, handleCloseNavMenu }) {
   return (
     <nav className="nav justify-content-center justify-content-md-start">
       {pages.map((page) => (
-        <a
-        key={page}
-        href={`#${page}`}
-          onClick={() => setCurrentPage(page)}
-          className={currentPage === page ? "nav-link active" : "nav-link"}
+        <Link
+          key={page.name}
+          to={page.path} // Use Link to create navigation links
+          className="nav-link"
         >
-          {page}</a>
+          {page.name}
+        </Link>
       ))}
-
 
       {/* <a
         id="nav-link"

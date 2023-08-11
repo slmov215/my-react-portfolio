@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Projects.css";
 import projectsData from "./data/projects";
@@ -24,8 +25,8 @@ const Projects = () => {
               }`}
             >
               <div className="card shadow-sm">
-                <a
-                  href={project.link}
+                <Link
+                  to={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -34,18 +35,18 @@ const Projects = () => {
                     alt={project.title}
                     className="card-img-top"
                   />
-                </a>
+                </Link>
                 <div className="card-body">
                   <h5 className="card-title">{project.title}</h5>
                   <p className="card-text">{project.description}</p>
-                  <a
-                    href={project.gitHub}
+                  <Link
+                    to={project.gitHub}
                     className="btn btn-custom btn-sm mt-3"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     GitHub
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

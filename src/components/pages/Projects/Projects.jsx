@@ -47,6 +47,14 @@ const Projects = () => {
                   >
                     GitHub
                   </Link>
+                  <Link
+                    to={project.link}
+                    className="btn btn-custom btn-sm mt-3"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Deployed Link!
+                  </Link>
                 </div>
               </div>
             </div>

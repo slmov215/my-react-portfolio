@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navigation.css";
 
 const pages = [
-  { name: "About", path: "/about" },
+  { name: "About Me", path: "/about" },
   { name: "Projects", path: "/projects" },
   { name: "Contact", path: "/contact" },
   { name: "Resume", path: "/resume" },

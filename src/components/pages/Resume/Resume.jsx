@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaFilePdf } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Resume.css"; // Create a CSS file for Resume styles
+import "./Resume.css"; 
 
 const Resume = () => {
   return (
@@ -14,7 +14,7 @@ const Resume = () => {
         </Slide>
         <Slide bottom>
           <a
-            href="/path-to-your-resume.pdf" // Replace with your actual resume file path
+            href="/path-to-your-resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="resume-link"
@@ -23,19 +23,44 @@ const Resume = () => {
             Download Resume
           </a>
         </Slide>
-        <Slide bottom>
-          <div className="proficiencies">
-            <h4>Proficiencies</h4>
-            <ul>
-              <li>Front-end Development</li>
-              <li>React and Redux</li>
-              <li>HTML, CSS, JavaScript</li>
-              <li>Responsive Design</li>
-              <li>RESTful APIs</li>
-              <li>Git and Version Control</li>
-            </ul>
-          </div>
-        </Slide>
+        <div className="proficiencies-container">
+          <Slide bottom>
+            <div className="proficiency-section">
+              <h4>Front-End Proficiencies</h4>
+              <ul>
+                <li>React and Redux</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Responsive Design</li>
+                <li>RESTful APIs</li>
+                <li>UI/UX Design Principles</li>
+              </ul>
+            </div>
+          </Slide>
+          <Slide bottom>
+            <div className="proficiency-section">
+              <h4>Back-End Proficiencies</h4>
+              <ul>
+                <li>Node.js and Express.js</li>
+                <li>Database Management</li>
+                <li>API Development</li>
+                <li>Authentication and Authorization</li>
+                <li>Server Deployment</li>
+              </ul>
+            </div>
+          </Slide>
+          <Slide bottom>
+            <div className="proficiency-section">
+              <h4>Other Proficiencies</h4>
+              <ul>
+                <li>Version Control (Git)</li>
+                <li>Command Line and Terminal</li>
+                <li>Agile Development</li>
+                <li>Problem Solving</li>
+                <li>Team Collaboration</li>
+              </ul>
+            </div>
+          </Slide>
+        </div>
         <Slide bottom>
           <Link to="/" className="btn btn-back">
             Back Home

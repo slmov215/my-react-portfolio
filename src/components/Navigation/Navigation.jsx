@@ -12,7 +12,7 @@ const pages = [
 
 function Navigation({ currentPage, setCurrentPage, handleCloseNavMenu }) {
   return (
-    <nav className="nav justify-content-center justify-content-md-start">
+    <nav className="nav">
       {pages.map((page) => (
         <Link
           key={page.name}

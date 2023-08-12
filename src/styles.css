@@ -1,8 +1,6 @@
-/* styles.css */
-
 /* Global Styles */
 
-/* body {
+body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
   margin: 0;
@@ -13,7 +11,7 @@
 a {
   color: #333;
   text-decoration: none;
-} */
+}
 
 a:hover {
   text-decoration: underline;
@@ -22,16 +20,15 @@ a:hover {
 /* Header Styles */
 
 header {
-  background-color: #222;
+  background-color: #B7B6C1;
   padding: 1rem;
   text-align: center;
   position: relative;
 }
 
 header h1 {
-  font-size: 3rem;
   margin: 0;
-  color: #fff;
+  color: #B7B6C1;
 }
 
 nav {
@@ -44,7 +41,7 @@ nav a {
   font-size: 1.2rem;
   position: relative;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
 }
 
 nav a::before {
@@ -54,14 +51,14 @@ nav a::before {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #007bff;
+  background-color: #EDDFEF;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
 }
 
 nav a:hover {
-  color: #5bc0de;
+  color: #D5CFE1;
 }
 
 nav a:hover::before {
@@ -76,15 +73,12 @@ main {
 }
 
 section {
-  /* margin-bottom: 3rem; */
-  /* Add a unique background gradient animation */
   background-image: linear-gradient(45deg, #3a3b3d, #aab4b7, #1c1c1d);
   background-size: 200% 200%;
   animation: gradientAnimation 10s ease infinite;
-  border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 2rem;
-  color: #fff; /* Text color for better contrast */
+  color: #ebebeb;
 }
 
 section h2 {
@@ -97,7 +91,6 @@ section h2 {
 /* Projects Styles */
 
 ul {
-  list-style: none;
   padding: 0;
 }
 
@@ -175,7 +168,6 @@ footer p {
   transform: translateY(0);
 }
 
-/* Add a cool shadow effect to the footer */
 footer::before {
   content: '';
   position: absolute;
@@ -187,42 +179,3 @@ footer::before {
   filter: blur(10px);
 }
 
-/* Projects Styles */
-
-.carousel-inner {
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.carousel-item img {
-  height: 300px;
-  object-fit: cover;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.3);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: none;
-}
-
-.carousel-control-prev-icon::before,
-.carousel-control-next-icon::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 20px;
-  color: #fff;
-}
-
-.carousel-control-prev-icon::before {
-  content: '‹';
-}
-
-.carousel-control-next-icon::before {
-  content: '›';
-}

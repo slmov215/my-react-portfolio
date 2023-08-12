@@ -4,14 +4,14 @@
   display: inline-block;
   margin: 20px 10px;
   text-decoration: none;
-  color: #333;
+  color: #EDDFEF;
   font-size: 1.2rem;
   transition: transform 0.3s, color 0.3s;
 }
 
 .contact-link:hover {
   transform: translateY(-3px);
-  color: #007bff;
+  color: #B7B6C1;
 }
 
 .contact-icon {

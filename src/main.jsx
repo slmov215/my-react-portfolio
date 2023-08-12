@@ -14,12 +14,6 @@ import ProjectPage from './components/pages/Projects/Projects';
 import ContactPage from './components/pages/Contact/Contact';
 import ResumePage from './components/pages/Resume/Resume'
 
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
 
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
@@ -51,13 +45,6 @@ const router = createBrowserRouter([
     ],
   },
 ]);
-
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
 
 // Render the RouterProvider component
 ReactDOM.createRoot(document.getElementById('root')).render(

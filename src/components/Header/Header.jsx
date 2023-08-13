@@ -11,7 +11,7 @@ function Header({ currentPage, setCurrentPage }) {
           <div className="col-md-3">
             <div className="image-container">
               <img
-                src="\src\assets\img\my-pic-2.jpeg"
+                src="\src\assets\img\my-pic-1.jpeg"
                 alt="Stephen"
                 className="img-fluid rounded-circle animated-image"
               />

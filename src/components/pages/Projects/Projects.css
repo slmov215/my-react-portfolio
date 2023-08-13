@@ -91,9 +91,9 @@
 }
 
 .card {
-  /* ... (other card styles) */
   animation: flyOff 5s ease-in-out 1;
 }
+
 /* Fancier GitHub Button Styling */
 @keyframes wiggle {
   0% {

@@ -11,7 +11,7 @@ const About = () => {
           <div className="col-md-6">
             <Slide left >
               <img
-                src="\src\assets\img\my-pic-1.jpeg"
+                src=".\src\assets\img\my-pic-1.jpeg"
                 alt="Your Name"
                 className="img-fluid rounded-circle about-img animated-image"
               />

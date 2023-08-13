@@ -9,11 +9,11 @@ const About = () => {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-6">
-            <Slide left>
+            <Slide left >
               <img
                 src="\src\assets\img\my-pic-1.jpeg"
                 alt="Your Name"
-                className="img-fluid rounded-circle about-img"
+                className="img-fluid rounded-circle about-img animated-image"
               />
             </Slide>
           </div>

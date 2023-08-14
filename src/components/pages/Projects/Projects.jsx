@@ -1,3 +1,4 @@
+// Projects.jsx
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -12,11 +13,12 @@ const Projects = () => {
       setShowCards(true);
     }, 500); // Delay the animation start for 500ms
   }, []);
+
   return (
     <section id="projects" className="py-5">
       <div className="container">
         <h2 className="text-center mb-5">Projects</h2>
-        <div className="row text-center">
+        <div className="row text-center justify-content-center">
           {projectsData.map((project, index) => (
             <div
               key={index}
@@ -39,22 +41,24 @@ const Projects = () => {
                 <div className="card-body">
                   <h5 className="card-title">{project.title}</h5>
                   <p className="card-text">{project.description}</p>
-                  <Link
-                    to={project.gitHub}
-                    className="btn btn-custom btn-sm mt-3"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub
-                  </Link>
-                  <Link
-                    to={project.link}
-                    className="btn btn-custom btn-sm mt-3"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Deployed Link!
-                  </Link>
+                  <div className="button-group">
+                    <Link
+                      to={project.gitHub}
+                      className="btn btn-custom btn-sm mt-3"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      GitHub
+                    </Link>
+                    <Link
+                      to={project.link}
+                      className="btn btn-custom btn-sm mt-3"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Deployed Link!
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

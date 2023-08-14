@@ -12,21 +12,21 @@ const Footer = () => {
     <footer className="footer">
       <div className="social-icons">
         <a
-          href="https://www.instagram.com/your_username"
+          href="https://www.instagram.com/yokizzo"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faInstagram} />
         </a>
         <a
-          href="https://www.linkedin.com/in/your_username"
+          href="https://www.linkedin.com/in/stephen-mov-636583288/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
         <a
-          href="https://github.com/your_username"
+          href="https://github.com/slmov215"
           target="_blank"
           rel="noopener noreferrer"
         >

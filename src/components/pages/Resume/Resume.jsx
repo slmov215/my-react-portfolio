@@ -14,7 +14,7 @@ const Resume = () => {
         </Slide>
         <Slide bottom>
           <a
-            href="/path-to-your-resume.pdf"
+            href=".\src\assets\Stephen's Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="resume-link"

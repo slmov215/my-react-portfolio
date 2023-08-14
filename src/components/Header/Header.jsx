@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import Navigation from "../Navigation/Navigation";
 import "./Header.css";
+// import imgPath from "../assets/img/my-pic-1.jpeg";
+import ImagePath from '../assets/images/my-pic-1.jpeg';
 
 function Header({ currentPage, setCurrentPage }) {
   return (
@@ -11,7 +13,8 @@ function Header({ currentPage, setCurrentPage }) {
           <div className="col-md-3">
             <div className="image-container">
               <img
-                src=".\src\assets\img\my-pic-1.jpeg"
+                // src={imgPath}
+                src="../src/assets/img/my-pic-1.jpeg"
                 alt="Stephen"
                 className="img-fluid rounded-circle animated-image"
               />

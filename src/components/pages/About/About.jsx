@@ -2,6 +2,7 @@ import React from "react";
 import { Slide } from "react-awesome-reveal";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./About.css";
+// import imgPath from "../assets/images/my-pic-1.jpeg";
 
 const About = () => {
   return (
@@ -11,7 +12,8 @@ const About = () => {
           <div className="col-md-6">
             <Slide left >
               <img
-                src=".\src\assets\img\my-pic-1.jpeg"
+                // src={imgPath}
+                src="..\src\assets\img\my-pic-1.jpeg"
                 alt="Your Name"
                 className="img-fluid rounded-circle about-img animated-image"
               />

@@ -4,6 +4,7 @@ import { FaFilePdf } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Resume.css"; 
+// import StephenResume from "../assets/stephen-resume.pdf";
 
 const Resume = () => {
   return (
@@ -14,7 +15,8 @@ const Resume = () => {
         </Slide>
         <Slide bottom>
           <a
-            href=".\src\assets\Stephen's Resume.pdf"
+            // href="../src/assets/stephen-resume.pdf"
+            href={StephenResume}
             target="_blank"
             rel="noopener noreferrer"
             className="resume-link"

@@ -27,6 +27,8 @@
 
 ## Description
 
+This week, I was tasked in creating a portfolio using React.js. Experience innovation, creativity, and expertise brought to life in my personalized web developer portfolio. This captivating single-page application showcases my journey, skills, and passion for crafting exceptional digital experiences. This clean and user-friendly single-page application offers a glimpse into my skills, projects, and contact information.
+
 ## Live URL
 
 [Link to Stephen's Portfolio](https://profound-brigadeiros-ba018a.netlify.app/)
@@ -46,6 +48,14 @@
 - ![react-icons](https://img.shields.io/badge/-react--icons-61DAFB?style=flat)
 
 ## Installation
+
+- Clone the Repository: Start by cloning the portfolio repository from GitHub to your local machine. [Link](https://github.com/slmov215/pwa-text-editor)
+
+- Navigate to the Directory: Open your terminal and navigate to the portfolio's directory using the cd command.
+
+- Install Dependencies: Run the command npm install to install all necessary dependencies for the portfolio.
+
+- Run the Application: Once the installation is complete, use the command npm start to launch the portfolio application in your browser.
 
 ## Features
 
@@ -70,6 +80,7 @@
 ## Usage Information
 
 ## License
+
 [MIT License](https://opensource.org/licenses/MIT)
 
 ## Questions

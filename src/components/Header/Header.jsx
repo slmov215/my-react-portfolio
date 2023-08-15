@@ -3,7 +3,7 @@ import { useState } from "react";
 import Navigation from "../Navigation/Navigation";
 import "./Header.css";
 // import imgPath from "../assets/img/my-pic-1.jpeg";
-import ImagePath from "../../assets/images/profile-pic.jpeg";
+import ImagePath from "../../assets/images/profile-pic-1.png";
 
 function Header({ currentPage, setCurrentPage }) {
   return (

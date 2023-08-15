@@ -1,4 +1,4 @@
-import WeatherApp from "../../assets/images/weather-dashboard-screen-shot.jpeg";
+// import WeatherApp from "../../assets/images/weather-dashboard-screen-shot.jpeg";
 // import project1 from "../../assets/images/project-1.jpeg";
 // import employeeTracker from "../../assets/images/employee-tracker-demo.jpeg";
 // import techBlog from "../../assets/images/my-tech-blog.jpeg";

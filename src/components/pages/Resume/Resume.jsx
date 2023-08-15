@@ -4,7 +4,7 @@ import { FaFilePdf } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Resume.css"; 
-// import StephenResume from "../assets/stephen-resume.pdf";
+import StephenResume from "../../../assets/stephen-resume.pdf";
 
 const Resume = () => {
   return (

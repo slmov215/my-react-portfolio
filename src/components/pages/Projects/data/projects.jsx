@@ -1,9 +1,9 @@
-// import weatherApp from "../src/assets/images/weather-dashboard-screen-shot.jpeg";
-// import project1 from "../src/assets/images/project-1.jpeg";
-// import employeeTracker from "../src/assets/images/employee-tracker-demo.jpeg";
-// import techBlog from "../src/assets/images/my-tech-blog.jpeg";
-// import project2 from "../src/assets/images/project-2.jpeg";
-// import pwa from "../src/assets/images/pwa-text-editor.jpeg";
+import WeatherApp from "../../assets/images/weather-dashboard-screen-shot.jpeg";
+// import project1 from "../../assets/images/project-1.jpeg";
+// import employeeTracker from "../../assets/images/employee-tracker-demo.jpeg";
+// import techBlog from "../../assets/images/my-tech-blog.jpeg";
+// import project2 from "../../assets/images/project-2.jpeg";
+// import pwa from "../../assets/images/pwa-text-editor.jpeg";
 
 const projectsData = [
   {

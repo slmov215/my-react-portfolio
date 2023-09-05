@@ -1,9 +1,10 @@
 import WeatherApp from "../../../../assets/images/weather-dashboard-screen-shot.gif";
 import project1 from "../../../../assets/images/project-1.png";
 import employeeTracker from "../../../../assets/images/employee-tracker-demo.gif";
-import techBlog from "../../../../assets/images/my-tech-blog.jpeg";
+// import techBlog from "../../../../assets/images/my-tech-blog.jpeg";
 import project2 from "../../../../assets/images/project-2.png";
 import pwa from "../../../../assets/images/pwa-text-editor.gif";
+import habit from "../../../../assets/images/habit-screen-shot.png";
 
 const projectsData = [
   {
@@ -27,13 +28,13 @@ const projectsData = [
       link: 'https://drive.google.com/file/d/1r7yIBk7enMAX2aziXzwKoqegtvwp2hHs/view',
       gitHub: 'https://github.com/slmov215/employee-traker-sql',
     },
-    {
-      title: 'My Tech Blog',
-      image: techBlog,
-      description: ' This is a full-stack app for the tech sector I had developed. Users can create and interact with content, save posts, comment, and manage their own articles. Public posts are viewable, but the dashboard and specific articles require login. User security is maintained through session storage, cookies, and bcrypt-hashed passwords.',
-      link: 'https://my-mvc-tech-blog-slmov-2a0483569b53.herokuapp.com/',
-      gitHub: 'https://github.com/slmov215/mvc-tech-blog',
-    },
+    // {
+    //   title: 'My Tech Blog',
+    //   image: techBlog,
+    //   description: ' This is a full-stack app for the tech sector I had developed. Users can create and interact with content, save posts, comment, and manage their own articles. Public posts are viewable, but the dashboard and specific articles require login. User security is maintained through session storage, cookies, and bcrypt-hashed passwords.',
+    //   link: 'https://my-mvc-tech-blog-slmov-2a0483569b53.herokuapp.com/',
+    //   gitHub: 'https://github.com/slmov215/mvc-tech-blog',
+    // },
     {
       title: 'Project 2 - Bookbusta',
       image: project2,
@@ -48,7 +49,13 @@ const projectsData = [
       link: 'https://my-pwa-text-editor-week-19-9be97db16d1d.herokuapp.com/',
       gitHub: 'https://github.com/slmov215/pwa-text-editor',
     },
-    // Add more projects
+      {
+      title: 'Habit Your Way ',
+      image: habit,
+      description: ' This is a full-stack app, using MERN, that tracks habit I had developed. Habit Your Way is a web-based habit tracker application that helps you stay organized and build positive habits. With this app, you can create and track your daily habits, set goals, and visualize your progress.',
+      link: 'https://habit-your-way-habit-tracker-8b86617a280e.herokuapp.com/',
+      gitHub: 'https://github.com/slmov215/habit-your-way/tree/Stephen',
+    },
   ];
   
   export default projectsData;

@@ -25,41 +25,33 @@ const About = () => {
                 <h2>About Me</h2>
                 <div right>
                   <p>
-                    Hi, I'm Stephen Mov, a results-driven restaurant manager in
-                    the midst of an exciting transition to become a full stack
-                    developer.
+                    Hi! My name is Stephen Mov, a results-driven restaurant manager 
+                    turned full-stack developer and data analyst.
                   </p>
                   <p>
-                    In my 11 years of restaurant management, I've honed
-                    leadership skills, orchestrated seamless operations, and
-                    fostered a customer-centric environment. Now, I'm channeling
-                    this same dedication into crafting impeccable web
-                    experiences.
+                  With 12 years of leadership experience in restaurant management, 
+                  I've honed my skills in project coordination, team leadership, 
+                  and customer-focused problem-solving. Now, I’m leveraging these 
+                  strengths to build seamless and impactful digital experiences.
                   </p>
                   <p>
-                    My coding journey started with HTML, CSS, and JavaScript and
-                    has evolved to include cutting-edge technologies like React
-                    and Node.js. I'm passionate about building elegant solutions
-                    that prioritize user needs.My coding journey started with
-                    HTML, CSS, and JavaScript and has evolved to include
-                    cutting-edge technologies like React and Node.js. I'm
-                    passionate about building elegant solutions that prioritize
-                    user needs.
+                  My journey in tech started with HTML, CSS, and JavaScript, 
+                  expanding into React, Node.js, and Express for full-stack development. 
+                  Recently, I completed a Data Analytics Boot Camp, where I developed 
+                  proficiency in Python, R, SQL, and Tableau, further enhancing my 
+                  ability to work with data-driven solutions.
                   </p>
                   <p>
-                    Transitioning from the dynamic restaurant industry, I bring
-                    a proven track record of project management, teamwork, and a
-                    sharp eye for detail. These qualities, coupled with my
-                    coding skills, position me as an ideal candidate to bridge
-                    the gap between user expectations and innovative technology.
+                  Transitioning from a fast-paced industry, I bring a unique combination 
+                  of management expertise, analytical skills, and a strong user-first approach. 
+                  Whether I’m crafting a dynamic web application or analyzing data to uncover insights, 
+                  I’m always focused on delivering value through technology.
                   </p>
                   <p>
-                    When I'm not coding, you might find me experimenting with
-                    new recipes or diving into coding challenges. I'm
-                    enthusiastic about contributing my unique perspective and
-                    skills to a forward-thinking team that values creativity and
-                    customer focus. Let's connect and explore the exciting
-                    possibilities of collaboration!
+                  When I’m not coding, you’ll likely find me experimenting with new recipes or 
+                  tackling coding challenges. I'm eager to collaborate with innovative teams 
+                  that value creativity, efficiency, and user-centric solutions. 
+                  Let’s connect and build something great!
                   </p>
                 </div>
               </div>

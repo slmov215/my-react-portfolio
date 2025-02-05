@@ -31,7 +31,7 @@ This week, I was tasked in creating a portfolio using React.js. Experience innov
 
 ## Live URL
 
-[Link to Stephen's Portfolio](https://profound-brigadeiros-ba018a.netlify.app/)
+[Link to Stephen's Portfolio](https://stephen-mov-portfolio.netlify.app/)
 
 ## Screenshots
 

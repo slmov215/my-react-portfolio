@@ -13,9 +13,9 @@ const Resume = () => {
         <Slide bottom>
           <h2 className="mb-4">Resume</h2>
         </Slide>
+
         <Slide bottom>
           <a
-            // href="../src/assets/stephen-resume.pdf"
             href={StephenResume}
             target="_blank"
             rel="noopener noreferrer"
@@ -25,44 +25,65 @@ const Resume = () => {
             Download Resume
           </a>
         </Slide>
+
         <div className="proficiencies-container">
+          {/* Front-End Proficiencies */}
           <Slide bottom>
             <div className="proficiency-section">
               <h4>Front-End Proficiencies</h4>
               <ul>
-                <li>React and Redux</li>
+                <li>React, Redux</li>
                 <li>HTML, CSS, JavaScript</li>
-                <li>Responsive Design</li>
-                <li>RESTful APIs</li>
-                <li>UI/UX Design Principles</li>
+                <li>Responsive & Accessible Design</li>
+                <li>RESTful APIs & GraphQL</li>
+                <li>UI/UX Best Practices</li>
               </ul>
             </div>
           </Slide>
+
+          {/* Back-End Proficiencies */}
           <Slide bottom>
             <div className="proficiency-section">
               <h4>Back-End Proficiencies</h4>
               <ul>
-                <li>Node.js and Express.js</li>
-                <li>Database Management</li>
-                <li>API Development</li>
-                <li>Authentication and Authorization</li>
-                <li>Server Deployment</li>
+                <li>Node.js, Express.js</li>
+                <li>Database Management (MongoDB, MySQL)</li>
+                <li>API Development & Integration</li>
+                <li>Authentication & Authorization</li>
+                <li>Cloud & Server Deployment</li>
               </ul>
             </div>
           </Slide>
+
+          {/* Data Analysis Proficiencies */}
           <Slide bottom>
             <div className="proficiency-section">
-              <h4>Other Proficiencies</h4>
+              <h4>Data Analysis & Visualization</h4>
               <ul>
-                <li>Version Control (Git)</li>
-                <li>Command Line and Terminal</li>
-                <li>Agile Development</li>
-                <li>Problem Solving</li>
-                <li>Team Collaboration</li>
+                <li>Python, R, SQL</li>
+                <li>Data Cleaning & Processing</li>
+                <li>Data Visualization (Tableau, Matplotlib, Seaborn)</li>
+                <li>Statistical Analysis & A/B Testing</li>
+                <li>ETL Pipelines & Data Storytelling</li>
+              </ul>
+            </div>
+          </Slide>
+
+          {/* Other Proficiencies */}
+          <Slide bottom>
+            <div className="proficiency-section">
+              <h4>Other Technical Skills</h4>
+              <ul>
+                <li>Version Control (Git, GitHub)</li>
+                <li>Command Line & Shell Scripting</li>
+                <li>Agile Development & Scrum</li>
+                <li>Problem Solving & Debugging</li>
+                <li>Remote Team Collaboration</li>
               </ul>
             </div>
           </Slide>
         </div>
+
         <Slide bottom>
           <Link to="/" className="btn btn-back">
             Back Home

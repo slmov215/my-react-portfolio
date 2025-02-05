@@ -39,27 +39,25 @@ const Projects = () => {
                   />
                 </Link>
                 <div className="card-body">
-                  <h5 className="card-title">{project.title}</h5>
-                  <p className="card-text">{project.description}</p>
-                  <div className="button-group">
-                    <Link
-                      to={project.gitHub}
-                      className="btn btn-custom btn-sm mt-3"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      GitHub
-                    </Link>
-                    <Link
-                      to={project.link}
-                      className="btn btn-custom btn-sm mt-3"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Deployed Link!
-                    </Link>
-                  </div>
-                </div>
+  <h5 className="card-title">{project.title}</h5>
+  <p className="card-text">{project.description}</p>
+  
+  <div className="tech-stack">
+    {project.techStack.map((tech, index) => (
+      <span key={index} className="badge badge-primary">{tech}</span>
+    ))}
+  </div>
+
+  <div className="button-group">
+    <Link to={project.gitHub} className="btn btn-custom btn-sm mt-3" target="_blank" rel="noopener noreferrer">
+      GitHub
+    </Link>
+    <Link to={project.link} className="btn btn-custom btn-sm mt-3" target="_blank" rel="noopener noreferrer">
+      Deployed Link!
+    </Link>
+  </div>
+</div>
+
               </div>
             </div>
           ))}

@@ -9,51 +9,49 @@ const About = () => {
     <section id="about" className="py-5">
       <div className="container">
         <div className="row align-items-center">
+          {/* Profile Image */}
           <div className="col-md-6">
-            <Slide left >
+            <Slide left>
               <img
                 src={ImagePath}
-                // src="..\src\assets\img\my-pic-1.jpeg"
-                alt="Your Name"
+                alt="Stephen Mov"
                 className="img-fluid rounded-circle about-img animated-image"
               />
             </Slide>
           </div>
+
+          {/* About Me Content */}
           <div className="col-md-6">
             <Slide right>
               <div className="about-content">
                 <h2>About Me</h2>
-                <div right>
-                  <p>
-                    Hi! My name is Stephen Mov, a results-driven restaurant manager 
-                    turned full-stack developer and data analyst.
+                <p>
+                  Hi, I'm <strong>Stephen Mov</strong>, a <strong>Full Stack Developer</strong> and <strong>Data Analyst</strong> 
+                  passionate about building efficient, user-centric applications and uncovering actionable insights from data.
+                </p>
+                <p>
+                  With <strong>12 years of experience as a restaurant manager</strong>, I developed expertise in leadership, 
+                  problem-solving, and business operations. Now, I apply those skills to developing 
+                  innovative solutions in web development and data analytics.
+                </p>
+
+                {/* Skills Breakdown */}
+                <div className="about-skills">
+                  <p>🔹 <strong>Full Stack Development</strong> – Proficient in JavaScript, React, Node.js, Express, and database management, 
+                    with a focus on scalable and user-friendly applications.
                   </p>
-                  <p>
-                  With 12 years of leadership experience in restaurant management, 
-                  I've honed my skills in project coordination, team leadership, 
-                  and customer-focused problem-solving. Now, I’m leveraging these 
-                  strengths to build seamless and impactful digital experiences.
+                  <p>🔹 <strong>Data Analysis & Visualization</strong> – Skilled in Python, R, SQL, and Tableau, leveraging data-driven insights 
+                    for business optimization and user experience enhancement.
                   </p>
-                  <p>
-                  My journey in tech started with HTML, CSS, and JavaScript, 
-                  expanding into React, Node.js, and Express for full-stack development. 
-                  Recently, I completed a Data Analytics Boot Camp, where I developed 
-                  proficiency in Python, R, SQL, and Tableau, further enhancing my 
-                  ability to work with data-driven solutions.
-                  </p>
-                  <p>
-                  Transitioning from a fast-paced industry, I bring a unique combination 
-                  of management expertise, analytical skills, and a strong user-first approach. 
-                  Whether I’m crafting a dynamic web application or analyzing data to uncover insights, 
-                  I’m always focused on delivering value through technology.
-                  </p>
-                  <p>
-                  When I’m not coding, you’ll likely find me experimenting with new recipes or 
-                  tackling coding challenges. I'm eager to collaborate with innovative teams 
-                  that value creativity, efficiency, and user-centric solutions. 
-                  Let’s connect and build something great!
+                  <p>🔹 <strong>Business & Technology Integration</strong> – Bridging the gap between customer needs and technical solutions, 
+                    blending business acumen with software development expertise.
                   </p>
                 </div>
+
+                <p>
+                  Whether it's developing high-performance web applications or uncovering meaningful patterns in data, 
+                  I thrive on solving real-world problems with technology. Let's connect and create impactful solutions together!
+                </p>
               </div>
             </Slide>
           </div>
@@ -64,4 +62,3 @@ const About = () => {
 };
 
 export default About;
-
